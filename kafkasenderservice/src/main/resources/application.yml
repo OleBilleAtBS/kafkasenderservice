@@ -1,0 +1,25 @@
+spring:
+  kafka:
+    properties:
+      bootstrap:
+        servers: localhost:9092
+      sasl:
+        mechanism:
+        jaas:
+          config:
+      security:
+        protocol: PLAINTEXT
+      basic:
+        auth:
+          credentials:
+            source:
+      schema:
+        registry:
+          basic:
+            auth:
+              user:
+                info:
+          url: http://localhost:8081
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer

@@ -1,0 +1,35 @@
+{
+  "connect.name": "com.bestseller.schema.logistics.BoxContent",
+  "fields": [
+    {
+      "default": null,
+      "name": "public_id",
+      "type": [
+        "null",
+        "long"
+      ]
+    },
+    {
+          "default": null,
+          "name": "box_public_id",
+          "type": [
+            "null",
+            "long"
+          ]
+    },
+    {
+      "default": null,
+      "name": "name",
+      "type": [
+        "null",
+        {
+          "avro.java.string": "String",
+          "type": "string"
+        }
+      ]
+      }
+  ],
+  "name": "BoxContent",
+  "namespace": "com.bestseller.schema.logistics",
+  "type": "record"
+}
